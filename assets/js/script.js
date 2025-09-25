@@ -14,7 +14,7 @@ async function buscarFilmes() {
     if (textoDigitado.length === 0) {
         alert("Por favor, digite o nome de um filme");
         return;
-    }
+    } 
 
     const url = `https://www.omdbapi.com/?s=${textoDigitado}&apikey=${chaveApi}`;
     try {
@@ -45,8 +45,8 @@ function mostrarFilmes(data) {
     dadosFilme.innerHTML = `<ul>
         ${data.Search.map(filme => `
             <li>
-            ${filme.Title}
-            <img src="${filme.Poster}"> 
+            ${filme.Title} <br>
+            <img src="${filme.Poster}"> <br> 
             Ano:${filme.Year}</li>
             `).join('')}
     </ul>`;
