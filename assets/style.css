@@ -1,11 +1,125 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
-header,footer{
-display: flex;
-justify-content: center;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d0d0f; 
+    color: #e4e4e7;     
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comecoTitulo {
+    display: inline;
+    color: #9333ea; 
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.fimTitulo {
+    display: inline;
+    color: #38bdf8; 
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #3f3f46;
+    background: #18181b;
+    color: #f4f4f5;
+    width: 280px;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #9333ea;
+    box-shadow: 0 0 8px #9333ea55;
+}
+
+
+.botao {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #9333ea, #38bdf8);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+#dadosFilme {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+#dadosFilme ul {
+    list-style: none;
+}
+
+#dadosFilme li {
+    background: #18181b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+
+#dadosFilme li:hover {
+    transform: translateY(-3px);
+}
+
+#dadosFilme img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #a1a1aa;
 }
